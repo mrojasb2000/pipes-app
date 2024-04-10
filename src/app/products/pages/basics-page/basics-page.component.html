@@ -18,4 +18,30 @@
       {{ nameTitle }} - {{ nameTitle | titlecase }}
     </p-card>
   </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="date format">
+      <ul>
+        <li>date</li>
+        <li>date | date</li>
+        <li>date:'short'</li>
+        <li>date:'medium'</li>
+        <li>date:'long'</li>
+        <li>date:'MMMM'</li>
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="examples">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date }}</li>
+        <li>{{ customDate | date:'short' }}</li>
+        <li>{{ customDate | date:'medium' }}</li>
+        <li>{{ customDate | date:'long' }}</li>
+        <li>{{ customDate | date:'MMMM' }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>
