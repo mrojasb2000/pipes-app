@@ -1,1 +1,22 @@
-<p>basics-page works!</p>
+<p-panel>
+  <h1>Commons Pipes</h1>
+  <p>This is Angular commons pipes available in Common Module.</p>
+</p-panel>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card header="uppercase">
+      {{ nameLower }} - {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="lowercase">
+      {{ nameUpper }} - {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="titlecase">
+      {{ nameTitle }} - {{ nameTitle | titlecase }}
+    </p-card>
+  </div>
+</div>
