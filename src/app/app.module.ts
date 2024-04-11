@@ -8,6 +8,12 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ProductsModule } from './products/products.module';
 
+// Global locate config
+import localeESCL from '@angular/common/locales/es-CL'
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData( localeESCL )
+
 @NgModule({
   declarations: [
     AppComponent

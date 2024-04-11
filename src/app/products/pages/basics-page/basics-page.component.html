@@ -28,6 +28,13 @@
         <li>date:'medium'</li>
         <li>date:'long'</li>
         <li>date:'MMMM'</li>
+        <li>date:'MMMM dd yyyy'</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>date:'long':'GMT-6'</li>
+        <li>date:'long':'GMT-4'</li>
+        <li>date:'long':'':'es-CL'</li>
       </ul>
     </p-card>
   </div>
@@ -41,6 +48,13 @@
         <li>{{ customDate | date:'medium' }}</li>
         <li>{{ customDate | date:'long' }}</li>
         <li>{{ customDate | date:'MMMM' }}</li>
+        <li>{{ customDate | date:'MMMM dd yyyy' }}</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>{{ customDate | date:'long':'GMT-6' }}</li>
+        <li>{{ customDate | date:'long':'GMT-4' }}</li>
+        <li>{{ customDate | date:'long':'':'es-CL' }}</li>
       </ul>
     </p-card>
   </div>
