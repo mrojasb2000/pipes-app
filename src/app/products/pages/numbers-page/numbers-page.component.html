@@ -1,1 +1,21 @@
-<p>numbers-page works!</p>
+<p-panel header="Numerics Pipes" class="p-2">
+  <p>This is Angular commons pipes available in Common Module.</p>
+</p-panel>
+
+<div class="grid mt-1">
+  <div class="col-12 md:col-4">
+    <p-card header="Sells" subheader="2024">
+      {{ totalSells | number:'1.2-2' }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Sells" subheader="2024">
+      {{ totalSells | currency:'CLP':'symbol-narrow':'1.2-2' }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Sells" subheader="2024">
+      {{ percent | percent:'1.2-2' }}
+    </p-card>
+  </div>
+</div>
