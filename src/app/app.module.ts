@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -10,9 +10,11 @@ import { ProductsModule } from './products/products.module';
 
 // Global locate config
 import localeESCL from '@angular/common/locales/es-CL'
+import localeFRCA from '@angular/common/locales/fr-CA'
 import { registerLocaleData } from '@angular/common';
 
 registerLocaleData( localeESCL )
+registerLocaleData( localeFRCA )
 
 @NgModule({
   declarations: [
@@ -26,7 +28,11 @@ registerLocaleData( localeESCL )
     ProductsModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID, useValue: 'es-CL'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
